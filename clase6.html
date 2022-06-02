@@ -30,6 +30,8 @@
         {
             display: grid;
             grid-template-columns: repeat(auto-fill,240px);
+            gap: 30px;
+            place-content: center;
         }
         .product-card
         {
@@ -44,7 +46,57 @@
         }
         .produc-info
         {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+        }
 
+        .produc-info figure img
+        {
+           margin: 0 auto;
+        }
+        .produc-info figure img
+        {
+            width: 35px;
+            height: 35px;
+        }
+        .produc-info div p:nth-child(1)
+        {
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 4px;
+
+        }
+
+        .produc-info div p:nth-child(2)
+        {
+            font-size: var(--sm);
+            margin-top: 0;
+            margin-bottom: 0;
+
+        }
+
+        @media (max-width: 640px)
+        {
+            .card-container
+                {
+                display: grid;
+                grid-template-columns: repeat(auto-fill,140px);
+                
+                }
+            .product-card
+            {
+            width: 140px;
+            }
+            .product-card img
+            {
+            width: 140px;
+            height: 140px;
+            
+
+            
         }
     </style>
 </head>   
@@ -54,12 +106,56 @@
                 <div class="product-card">
                     <img src="https://www.memesportal.com/wp-content/uploads/2021/09/Doge-on-bike.jpg" alt="" >
                     <div class="produc-info">
-                        <p>$120,00</p>
-                        <p>Bike</p>
-                    </div>
-                        <figure>
+                        <div>
+                            <p>$120,00</p>
+                            <p>Bike</p>
+                        </div>
+                            <figure>
                             <img src="./icons/bt_add_to_cart.svg" alt="">
                         </figure>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://www.memesportal.com/wp-content/uploads/2021/09/Doge-on-bike.jpg" alt="" >
+                    <div class="produc-info">
+                        <div>
+
+                            <p>$120,00</p>
+                            <p>Bike</p>
+                        </div>
+                            <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <img src="https://www.memesportal.com/wp-content/uploads/2021/09/Doge-on-bike.jpg" alt="" >
+                    <div class="produc-info">
+                        <div>
+
+                            <p>$120,00</p>
+                            <p>Bike</p>
+                        </div>
+                            <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://www.memesportal.com/wp-content/uploads/2021/09/Doge-on-bike.jpg" alt="" >
+                    <div class="produc-info">
+                        <div>
+
+                            <p>$120,00</p>
+                            <p>Bike</p>
+                        </div>
+                            <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>
                 </div>
             </div>
         </section>
